@@ -22,4 +22,10 @@ class NewsFragment : Fragment() {
         return binding.root
     }
 
+    companion object {
+        fun create(): NewsFragment {
+            return NewsFragment()
+        }
+    }
+
 }

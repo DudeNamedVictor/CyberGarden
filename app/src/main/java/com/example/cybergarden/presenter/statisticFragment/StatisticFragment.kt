@@ -20,4 +20,10 @@ class StatisticFragment : Fragment() {
         return binding.root
     }
 
+    companion object {
+        fun create(): StatisticFragment {
+            return StatisticFragment()
+        }
+    }
+
 }
