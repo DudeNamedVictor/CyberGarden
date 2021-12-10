@@ -15,12 +15,12 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="#dddddd"
         app:tabGravity="fill"
-        app:tabMode="fixed"
-        app:tabMaxWidth="0dp"
         app:tabIndicatorColor="@android:color/black"
         app:tabIndicatorHeight="5dp"
-        android:background="#dddddd"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
         app:tabSelectedTextColor="@android:color/holo_red_light"
         app:tabTextAppearance="@style/CustomTabText" />
 

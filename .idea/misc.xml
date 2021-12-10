@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/main_activity_layout.xml" value="0.1" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_fragment_layout.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_item.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_item.xml" value="0.1" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_lauout.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_layout.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/tests_fragment_layput.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/toolbar_layout.xml" value="0.4" />
       </map>
     </option>
   </component>
