@@ -15,13 +15,13 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#dddddd"
+        android:background="#D1CFFF"
         app:tabGravity="fill"
         app:tabIndicatorColor="@android:color/black"
         app:tabIndicatorHeight="5dp"
         app:tabMaxWidth="0dp"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="@android:color/holo_red_light"
+        app:tabSelectedTextColor="#FF3700B3"
         app:tabTextAppearance="@style/CustomTabText" />
 
 </LinearLayout>

@@ -7,4 +7,3 @@ private val retrofit = Retrofit.Builder()
     .addConverterFactory(GsonConverterFactory.create())
     .baseUrl(Constants.NEWS_URL)
     .build()
-
