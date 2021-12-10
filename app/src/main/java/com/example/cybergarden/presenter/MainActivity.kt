@@ -1,7 +1,8 @@
-package com.example.cybergarden
+package com.example.cybergarden.presenter
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cybergarden.R
 
 class MainActivity : AppCompatActivity() {
 
