@@ -1,6 +1,7 @@
 package com.example.cybergarden.presenter.newsFragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +13,10 @@ import com.example.cybergarden.databinding.NewsFragmentLayoutBinding
 
 class NewsFragment : Fragment() {
 
-    private lateinit var binding: NewsFragmentLayoutBinding
     private val viewModel: NewsViewModel by viewModels()
+
+    private lateinit var binding: NewsFragmentLayoutBinding
+    private val data = mutableListOf<News>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,12 +28,27 @@ class NewsFragment : Fragment() {
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = NewsAdapter(fillList())
 
+        binding.recyclerView.addOnItemTouchListener(
+            NewsAdapter.RecyclerItemClickListener(binding.recyclerView,
+                object : NewsAdapter.RecyclerItemClickListener.OnItemClickListener {
+                    override fun onItemClick(view: View, position: Int) {
+                        Log.d("adadwadadada", position.toString())
+                    }
+                })
+        )
+
         return binding.root
     }
 
-    private fun fillList(): List<String> {
-        val data = mutableListOf<String>()
-        (0..30).forEach { i -> data.add("$i element") }
+    private fun fillList(): List<News> {
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
+        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
         return data
     }
 
