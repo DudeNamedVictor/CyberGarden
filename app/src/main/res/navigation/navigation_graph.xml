@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.cybergarden.presenter.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment_layout">
+
+        <action
+            android:id="@+id/action_mainFragment_to_secondFragment"
+            app:destination="@id/current_news_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/current_news_fragment"
+        android:name="com.example.cybergarden.presenter.currentNewsFragment.CurrentNewsFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/current_news_layout"/>
+
+</navigation>

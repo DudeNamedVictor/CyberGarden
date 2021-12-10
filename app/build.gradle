@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -61,6 +62,8 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'com.google.android.material:material:1.6.0-alpha01'
+
+    implementation "org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.20"
 
     implementation "io.coil-kt:coil:1.1.1"
 }

@@ -5,11 +5,14 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cybergarden.R
 import com.example.cybergarden.databinding.NewsFragmentLayoutBinding
+import com.example.cybergarden.presenter.currentNewsFragment.CurrentNewsFragment
 
 class NewsFragment : Fragment() {
 
@@ -32,7 +35,9 @@ class NewsFragment : Fragment() {
             NewsAdapter.RecyclerItemClickListener(binding.recyclerView,
                 object : NewsAdapter.RecyclerItemClickListener.OnItemClickListener {
                     override fun onItemClick(view: View, position: Int) {
-                        Log.d("adadwadadada", position.toString())
+                        val bundle = bundleOf()
+                        bundle.putParcelable(CurrentNewsFragment.NEWS_KEY, data[position])
+                        findNavController().navigate(R.id.action_mainFragment_to_secondFragment, bundle)
                     }
                 })
         )
