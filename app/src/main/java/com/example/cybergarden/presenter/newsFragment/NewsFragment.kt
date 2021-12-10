@@ -37,12 +37,24 @@ class NewsFragment : Fragment() {
                     override fun onItemClick(view: View, position: Int) {
                         val bundle = bundleOf()
                         bundle.putParcelable(CurrentNewsFragment.NEWS_KEY, data[position])
-                        findNavController().navigate(R.id.action_mainFragment_to_secondFragment, bundle)
+                        findNavController().navigate(
+                            R.id.action_mainFragment_to_secondFragment,
+                            bundle
+                        )
                     }
                 })
         )
 
+        viewModel.newsSizeRequest()
+        setObservers()
+
         return binding.root
+    }
+
+    private fun setObservers() {
+        viewModel.newsSizeMLD.observe(this, {
+            Log.d("adawdadawda", it.toString())
+        })
     }
 
     private fun fillList(): List<News> {
