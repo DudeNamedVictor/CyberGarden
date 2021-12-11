@@ -56,6 +56,11 @@
             android:id="@+id/loginFragment_to_authorisationFragment"
             app:destination="@id/authorisation_in_fragment"
             app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment

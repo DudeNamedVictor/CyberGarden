@@ -29,7 +29,6 @@ class MainFragment : Fragment() {
         super.onResume()
         if (Constants.FIRST_LAUNCH) {
             findNavController().navigate(R.id.action_mainFragment_to_signInFragment)
-            Constants.FIRST_LAUNCH = false
         } else {
             renderViewPager()
             renderTabLayer()

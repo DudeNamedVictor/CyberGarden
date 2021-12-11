@@ -15,6 +15,9 @@ private val retrofit = Retrofit.Builder()
 interface AuthorisationService {
     @POST("/v1/registration/add")
     fun addUser(@Body authorisation: Authorisation): Call<Boolean>
+
+    @POST("/v1/registration/authorization")
+    fun authorization(@Body authorisation: Authorisation): Call<Boolean>
 }
 
 object AuthorisationApi {

@@ -24,4 +24,5 @@
     <string name="registration_button">Зарегистрироваться</string>
     <string name="log_in_no_account">Еще не аккаунта? Зарегиструйтесь</string>
     <string name="authorisation_alert">Я ознакомлен и согласен с правилами обработки персональных данных</string>
+    <string name="error_login">Пользователь не существует</string>
 </resources>
