@@ -2,7 +2,9 @@ package com.example.cybergarden.presenter.newsFragment
 
 import android.view.*
 import androidx.recyclerview.widget.RecyclerView
+import coil.loadAny
 import com.example.cybergarden.databinding.NewsItemBinding
+
 
 class NewsAdapter(private val news: List<News>) :
     RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {
@@ -17,6 +19,7 @@ class NewsAdapter(private val news: List<News>) :
                 title.text = news[position].title
                 description.text = news[position].description
                 date.text = news[position].data
+                image.loadAny(news[position].image)
             }
 
             itemView.setOnClickListener {
@@ -39,14 +42,19 @@ class NewsAdapter(private val news: List<News>) :
 
     override fun getItemCount() = news.size
 
-    open class RecyclerItemClickListener(recyclerView: RecyclerView, private val mListener: OnItemClickListener?) : RecyclerView.OnItemTouchListener {
-        private var mGestureDetector: GestureDetector = GestureDetector(recyclerView.context, object : GestureDetector.SimpleOnGestureListener() {
-            override fun onSingleTapUp(e: MotionEvent): Boolean {
-                return true
-            }
+    open class RecyclerItemClickListener(
+        recyclerView: RecyclerView,
+        private val mListener: OnItemClickListener?
+    ) : RecyclerView.OnItemTouchListener {
+        private var mGestureDetector: GestureDetector = GestureDetector(
+            recyclerView.context,
+            object : GestureDetector.SimpleOnGestureListener() {
+                override fun onSingleTapUp(e: MotionEvent): Boolean {
+                    return true
+                }
 
-            override fun onLongPress(e: MotionEvent) {}
-        })
+                override fun onLongPress(e: MotionEvent) {}
+            })
 
         interface OnItemClickListener {
             fun onItemClick(view: View, position: Int)

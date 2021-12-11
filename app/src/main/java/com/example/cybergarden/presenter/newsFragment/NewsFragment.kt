@@ -10,9 +10,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.cybergarden.R
 import com.example.cybergarden.databinding.NewsFragmentLayoutBinding
 import com.example.cybergarden.presenter.currentNewsFragment.CurrentNewsFragment
+
 
 class NewsFragment : Fragment() {
 
@@ -29,7 +31,7 @@ class NewsFragment : Fragment() {
         binding.toolbar.toolbarTitle.setText(R.string.events)
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        binding.recyclerView.adapter = NewsAdapter(fillList())
+        binding.recyclerView.adapter = NewsAdapter(data)
 
         binding.recyclerView.addOnItemTouchListener(
             NewsAdapter.RecyclerItemClickListener(binding.recyclerView,
@@ -45,7 +47,8 @@ class NewsFragment : Fragment() {
                 })
         )
 
-        viewModel.newsSizeRequest()
+//        viewModel.newsSizeRequest()
+        viewModel.getNews()
         setObservers()
 
         return binding.root
@@ -55,18 +58,10 @@ class NewsFragment : Fragment() {
         viewModel.newsSizeMLD.observe(this, {
             Log.d("adawdadawda", it.toString())
         })
-    }
-
-    private fun fillList(): List<News> {
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        data.add(News("adwadadw", "afrhjxh", "sefesgseegsg", "affsegsgsf"))
-        return data
+        viewModel.newsMLD.observe(this, {
+            data.addAll(it)
+            binding.recyclerView.adapter?.notifyDataSetChanged()
+        })
     }
 
     companion object {
