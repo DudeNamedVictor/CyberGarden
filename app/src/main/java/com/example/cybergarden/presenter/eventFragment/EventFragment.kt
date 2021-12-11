@@ -51,6 +51,9 @@ class EventFragment : Fragment() {
         binding.questions.root.setOnClickListener {
             findNavController().navigate(R.id.questions_fragment)
         }
+        binding.inDirectionOfTraining.root.setOnClickListener {
+            findNavController().navigate(R.id.direction_of_training)
+        }
     }
 
     companion object {
