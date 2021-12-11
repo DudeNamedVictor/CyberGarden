@@ -27,4 +27,17 @@
     <string name="authorisation_alert">Я ознакомлен и согласен с правилами обработки персональных данных</string>
     <string name="error_login">Пользователь не существует</string>
     <string name="choose_direction">Подобрать направление</string>
+    <string name="choose_intresting">Что вам интересно?</string>
+    <string name="math">Математика</string>
+    <string name="russian">Русский</string>
+    <string name="fith">Физика</string>
+    <string name="inform">Информатика</string>
+    <string name="other">Другое</string>
+    <string name="choose_studies">С какими экзаменами будете поступать?</string>
+    <string name="choose_form">Выберете форму обучения?</string>
+    <string name="budget">Бакалавриат</string>
+    <string name="commercial">Специалитет</string>
+    <string name="summ">Сумма баллов?</string>
+    <string name="summa">Сумма</string>
+    <string name="filter">Фильтр</string>
 </resources>

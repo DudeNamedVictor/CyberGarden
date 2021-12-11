@@ -6,12 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cybergarden.R
 import com.example.cybergarden.data.Direction
-import com.example.cybergarden.data.News
+import com.example.cybergarden.data.FilterReq
 import com.example.cybergarden.databinding.DirectionOfTrainingLayoutBinding
-import com.example.cybergarden.presenter.newsFragment.NewsAdapter
+import com.example.cybergarden.presenter.utils.Constants
 
 class DirectionOfTrainingFragment : Fragment() {
 
@@ -28,15 +29,38 @@ class DirectionOfTrainingFragment : Fragment() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = DirectionAdapter(data)
+        binding.actionButton.setOnClickListener {
+            findNavController().navigate(R.id.direction_of_training_to_dialog_fragment)
+        }
 
         viewModel.getDirection()
 
         viewModel.newsSizeMLD.observe(this, {
+            data.clear()
             data.addAll(it)
             binding.recyclerView.adapter?.notifyDataSetChanged()
         })
 
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (Constants.FILTER) {
+            Constants.FILTER = false
+            var list = mutableListOf<String>()
+            if (Constants.math) {
+                list.add("matem")
+            }
+            if (Constants.inform && list.size < 1) {
+                list.add("infor")
+            }
+            if (Constants.other && list.size < 1) {
+                list.add("other")
+            }
+            val filter = FilterReq(list, Constants.summ)
+            viewModel.postFilter(filter)
+        }
     }
 
 }
