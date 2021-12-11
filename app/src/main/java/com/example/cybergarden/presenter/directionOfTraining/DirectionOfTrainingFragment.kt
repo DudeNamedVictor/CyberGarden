@@ -25,7 +25,13 @@ class DirectionOfTrainingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DirectionOfTrainingLayoutBinding.inflate(inflater, container, false)
-        binding.toolbar.toolbarTitle.setText(R.string.events)
+        binding.toolbar.apply {
+            toolbarTitle.setText(R.string.events)
+            back.visibility = View.VISIBLE
+            back.setOnClickListener {
+                findNavController().popBackStack()
+            }
+        }
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = DirectionAdapter(data)

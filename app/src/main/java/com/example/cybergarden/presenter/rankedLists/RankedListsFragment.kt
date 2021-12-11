@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cybergarden.R
 import com.example.cybergarden.data.RanketItems
@@ -24,8 +25,13 @@ class RankedListsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = RankedListLayoutBinding.inflate(inflater, container, false)
-
-        binding.toolbar.toolbarTitle.setText(R.string.events)
+        binding.toolbar.apply {
+            toolbarTitle.setText(R.string.events)
+            back.visibility = View.VISIBLE
+            back.setOnClickListener {
+                findNavController().popBackStack()
+            }
+        }
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = RankedListAdapter(data)

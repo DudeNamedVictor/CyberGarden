@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import coil.load
 import com.example.cybergarden.R
-import com.example.cybergarden.databinding.CurrentNewsLayoutBinding
 import com.example.cybergarden.data.News
+import com.example.cybergarden.databinding.CurrentNewsLayoutBinding
 import java.util.*
 
 class CurrentNewsFragment : Fragment() {
@@ -21,7 +22,13 @@ class CurrentNewsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = CurrentNewsLayoutBinding.inflate(inflater, container, false)
-        binding.toolbar.toolbarTitle.setText(R.string.events)
+        binding.toolbar.apply {
+            toolbarTitle.setText(R.string.events)
+            back.visibility = View.VISIBLE
+            back.setOnClickListener {
+                findNavController().popBackStack()
+            }
+        }
 
         return binding.root
     }

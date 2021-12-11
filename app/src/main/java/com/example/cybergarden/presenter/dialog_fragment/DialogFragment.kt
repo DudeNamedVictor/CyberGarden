@@ -19,7 +19,13 @@ class DialogFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DialogLayoutBinding.inflate(inflater, container, false)
-        binding.toolbar.toolbarTitle.setText(R.string.filter)
+        binding.toolbar.apply {
+            toolbarTitle.setText(R.string.filter)
+            back.visibility = View.VISIBLE
+            back.setOnClickListener {
+                findNavController().popBackStack()
+            }
+        }
 
         binding.actionButton.setOnClickListener {
             Constants.math = binding.math.isChecked

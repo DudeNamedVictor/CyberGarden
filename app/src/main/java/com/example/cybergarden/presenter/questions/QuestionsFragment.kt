@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cybergarden.R
 import com.example.cybergarden.data.QuestionItem
@@ -21,7 +22,13 @@ class QuestionsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = QuestionsLayoutFragmentBinding.inflate(inflater, container, false)
-        binding.toolbar.toolbarTitle.setText(R.string.faq)
+        binding.toolbar.apply {
+            toolbarTitle.setText(R.string.faq)
+            back.visibility = View.VISIBLE
+            back.setOnClickListener {
+                findNavController().popBackStack()
+            }
+        }
         initializeData()
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())

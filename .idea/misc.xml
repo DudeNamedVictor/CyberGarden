@@ -4,13 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_coolicon.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/round_background.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/round_down.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/round_up.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/rounded_button.xml" value="0.2537037037037037" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/authorisation_fragment_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/authorisation_fragment_layout.xml" value="0.2" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/current_news_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/custom_tab_header.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/dialog_layout.xml" value="0.25271739130434784" />
@@ -31,7 +32,7 @@
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_lauout.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_layout.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/tests_fragment_layput.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/toolbar_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/toolbar_layout.xml" value="0.2" />
         <entry key="..\:/Users/Victor/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.13020833333333334" />
       </map>
     </option>
