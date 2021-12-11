@@ -23,4 +23,22 @@
         android:label="SecondFragment"
         tools:layout="@layout/current_news_layout"/>
 
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.example.cybergarden.presenter.eventFragment.EventFragment"
+        android:label="event_fragment"
+        tools:layout="@layout/event_fragment_layout">
+
+        <action
+            android:id="@+id/action_eventFragment_to_rankedListFragment"
+            app:destination="@id/ranked_list_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ranked_list_fragment"
+        android:name="com.example.cybergarden.presenter.rankedLists.RankedListsFragment"
+        android:label="RankedList"
+        tools:layout="@layout/ranked_list_layout"/>
+
 </navigation>

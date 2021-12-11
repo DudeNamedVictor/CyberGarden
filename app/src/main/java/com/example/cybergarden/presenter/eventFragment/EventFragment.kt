@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.cybergarden.R
 import com.example.cybergarden.databinding.EventFragmentLayoutBinding
 
@@ -19,6 +20,7 @@ class EventFragment : Fragment() {
         binding = EventFragmentLayoutBinding.inflate(inflater, container, false)
         binding.toolbar.toolbarTitle.setText(R.string.enrollee)
         initializeItems()
+        setOnClickListeners()
 
         return binding.root
     }
@@ -39,6 +41,12 @@ class EventFragment : Fragment() {
         binding.questions.apply {
             title.setText(R.string.questions)
             description.setText(R.string.questions_description)
+        }
+    }
+
+    private fun setOnClickListeners() {
+        binding.rankedLists.root.setOnClickListener {
+            findNavController().navigate(R.id.ranked_list_fragment)
         }
     }
 
