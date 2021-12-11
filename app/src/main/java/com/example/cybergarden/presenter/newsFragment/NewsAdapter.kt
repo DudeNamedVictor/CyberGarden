@@ -3,6 +3,7 @@ package com.example.cybergarden.presenter.newsFragment
 import android.view.*
 import androidx.recyclerview.widget.RecyclerView
 import coil.loadAny
+import com.example.cybergarden.data.News
 import com.example.cybergarden.databinding.NewsItemBinding
 
 

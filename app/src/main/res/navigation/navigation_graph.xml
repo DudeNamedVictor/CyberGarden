@@ -15,13 +15,18 @@
             android:id="@+id/action_mainFragment_to_secondFragment"
             app:destination="@id/current_news_fragment"
             app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_signInFragment"
+            app:destination="@id/sign_in_fragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
         android:id="@+id/current_news_fragment"
         android:name="com.example.cybergarden.presenter.currentNewsFragment.CurrentNewsFragment"
         android:label="SecondFragment"
-        tools:layout="@layout/current_news_layout"/>
+        tools:layout="@layout/current_news_layout" />
 
     <fragment
         android:id="@+id/eventFragment"
@@ -39,6 +44,30 @@
         android:id="@+id/ranked_list_fragment"
         android:name="com.example.cybergarden.presenter.rankedLists.RankedListsFragment"
         android:label="RankedList"
-        tools:layout="@layout/ranked_list_layout"/>
+        tools:layout="@layout/ranked_list_layout" />
+
+    <fragment
+        android:id="@+id/sign_in_fragment"
+        android:name="com.example.cybergarden.presenter.singInFragment.SignInFragment"
+        android:label="SignIn"
+        tools:layout="@layout/sing_in_layout">
+
+        <action
+            android:id="@+id/loginFragment_to_authorisationFragment"
+            app:destination="@id/authorisation_in_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/authorisation_in_fragment"
+        android:name="com.example.cybergarden.presenter.authorisationFragment.AuthorisationFragment"
+        android:label="authorisationFragment"
+        tools:layout="@layout/authorisation_fragment_layout">
+
+    <action
+        android:id="@+id/authorisationFragment_to_mainFragment"
+        app:destination="@id/mainFragment"
+        app:popUpToInclusive="true" />
+    </fragment>
 
 </navigation>

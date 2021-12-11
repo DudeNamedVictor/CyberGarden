@@ -1,6 +1,6 @@
 package com.example.cybergarden.presenter.utils
 
-import com.example.cybergarden.presenter.newsFragment.News
+import com.example.cybergarden.data.News
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -13,7 +13,7 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(Constants.NEWS_URL)
     .build()
 
-interface CatsService {
+interface NewsService {
     @GET("/v1/news/getAllCount")
     fun getAllCount(): Call<Int>
 
@@ -25,7 +25,7 @@ interface CatsService {
 }
 
 object NewsApi {
-    val RETROFIT_SERVICE: CatsService by lazy {
-        retrofit.create(CatsService::class.java)
+    val RETROFIT_SERVICE: NewsService by lazy {
+        retrofit.create(NewsService::class.java)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.cybergarden.presenter.newsFragment
+package com.example.cybergarden.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

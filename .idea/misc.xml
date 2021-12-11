@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_coolicon.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/round_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/authorisation_fragment_layout.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/current_news_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/enrollee_widget.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/event_fragment_layout.xml" value="0.1082427536231884" />
@@ -14,7 +16,8 @@
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_fragment_layout.xml" value="0.2" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_item.xml" value="0.1" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/ranked_list_item.xml" value="0.4" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/ranked_list_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/ranked_list_layout.xml" value="0.39965397923875434" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/sing_in_layout.xml" value="0.1" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_lauout.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_layout.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/tests_fragment_layput.xml" value="0.12360688956433637" />

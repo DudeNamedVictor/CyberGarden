@@ -3,6 +3,7 @@ package com.example.cybergarden.presenter.rankedLists
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cybergarden.data.RanketItems
 import com.example.cybergarden.databinding.RankedListItemBinding
 
 class RankedListAdapter(private val rankedItems: List<RanketItems>) :
@@ -13,8 +14,8 @@ class RankedListAdapter(private val rankedItems: List<RanketItems>) :
 
         fun onBind(news: List<RanketItems>, position: Int) {
             binding.apply {
-                title.text = news[position].title
-                description.text = news[position].description
+                title.text = news[position].fio
+                description.text = news[position].score
             }
         }
 

@@ -65,5 +65,7 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.20"
 
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
     implementation "io.coil-kt:coil:1.1.1"
 }

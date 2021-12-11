@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.cybergarden.R
 import com.example.cybergarden.databinding.CurrentNewsLayoutBinding
-import com.example.cybergarden.presenter.newsFragment.News
+import com.example.cybergarden.data.News
 
 class CurrentNewsFragment : Fragment() {
 

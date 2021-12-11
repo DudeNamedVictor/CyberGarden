@@ -13,4 +13,15 @@
     <string name="ranked_lists_description">Следите за соей позицией</string>
     <string name="questions">Часто задаваемые вопросы</string>
     <string name="questions_description">Найдите ответ на свой вопрос здесь</string>
+    <string name="enter">Вход</string>
+    <string name="registration">Регистрация</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="fio">ФИО</string>
+    <string name="mobile_phone">Телефон</string>
+    <string name="snils">СНИЛС</string>
+    <string name="password">Пароль</string>
+    <string name="enter_button">Войти</string>
+    <string name="registration_button">Зарегистрироваться</string>
+    <string name="log_in_no_account">Еще не аккаунта? Зарегиструйтесь</string>
+    <string name="authorisation_alert">Я ознакомлен и согласен с правилами обработки персональных данных</string>
 </resources>

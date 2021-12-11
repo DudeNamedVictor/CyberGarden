@@ -3,6 +3,7 @@ package com.example.cybergarden.presenter.newsFragment
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import com.example.cybergarden.data.News
 import com.example.cybergarden.presenter.utils.NewsApi
 import retrofit2.Call
 import retrofit2.Callback
