@@ -27,12 +27,12 @@ class MainFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        if (Constants.FIRST_LAUNCH) {
-            findNavController().navigate(R.id.action_mainFragment_to_signInFragment)
-        } else {
+//        if (Constants.FIRST_LAUNCH) {
+//            findNavController().navigate(R.id.action_mainFragment_to_signInFragment)
+//        } else {
             renderViewPager()
             renderTabLayer()
-        }
+//        }
     }
 
     private fun renderViewPager() {

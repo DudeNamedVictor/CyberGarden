@@ -1,5 +1,6 @@
 package com.example.cybergarden.presenter.currentNewsFragment
 
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import coil.load
 import com.example.cybergarden.R
 import com.example.cybergarden.databinding.CurrentNewsLayoutBinding
 import com.example.cybergarden.data.News
+import java.util.*
 
 class CurrentNewsFragment : Fragment() {
 
@@ -32,7 +34,9 @@ class CurrentNewsFragment : Fragment() {
             title.text = arguments?.title
             description.text = arguments?.description
             date.text = arguments?.data
-            image.load(arguments?.image)
+            val imageBytes = Base64.getDecoder().decode(arguments?.image)
+            val bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size);
+            image.load(bitmap)
         }
 
     }

@@ -1,10 +1,14 @@
 package com.example.cybergarden.presenter.newsFragment
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.view.*
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import coil.loadAny
 import com.example.cybergarden.data.News
 import com.example.cybergarden.databinding.NewsItemBinding
+import java.util.*
 
 
 class NewsAdapter(private val news: List<News>) :
@@ -20,7 +24,9 @@ class NewsAdapter(private val news: List<News>) :
                 title.text = news[position].title
                 description.text = news[position].description
                 date.text = news[position].data
-                image.loadAny(news[position].image)
+                val imageBytes = Base64.getDecoder().decode(news[position].image)
+                val bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size);
+                image.load(bitmap)
             }
 
             itemView.setOnClickListener {

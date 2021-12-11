@@ -14,14 +14,45 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#D1CFFF"
+        android:layout_height="48dp"
+        android:background="@color/purple_500"
+        app:tabBackground="@color/purple_500"
         app:tabGravity="fill"
-        app:tabIndicatorColor="@android:color/black"
-        app:tabIndicatorHeight="5dp"
-        app:tabMaxWidth="0dp"
+        app:tabIndicatorHeight="2dp"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="#FF3700B3"
-        app:tabTextAppearance="@style/CustomTabText" />
+        app:tabRippleColor="@null"
+        app:tabIndicatorColor="@android:color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:layout="@layout/custom_tab_header" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout="@layout/custom_tab_header" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout="@layout/custom_tab_header" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabs"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="#D1CFFF"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorColor="@android:color/black"-->
+<!--        app:tabIndicatorHeight="5dp"-->
+<!--        app:tabMaxWidth="0dp"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabSelectedTextColor="#FF3700B3"-->
+<!--        app:tabTextAppearance="@style/CustomTabText" />-->
 
 </LinearLayout>
