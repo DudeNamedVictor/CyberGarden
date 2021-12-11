@@ -48,6 +48,9 @@ class EventFragment : Fragment() {
         binding.rankedLists.root.setOnClickListener {
             findNavController().navigate(R.id.ranked_list_fragment)
         }
+        binding.questions.root.setOnClickListener {
+            findNavController().navigate(R.id.questions_fragment)
+        }
     }
 
     companion object {

@@ -38,6 +38,11 @@
             android:id="@+id/action_eventFragment_to_rankedListFragment"
             app:destination="@id/ranked_list_fragment"
             app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_eventFragment_to_questionsFragment"
+            app:destination="@id/questions_fragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -45,6 +50,12 @@
         android:name="com.example.cybergarden.presenter.rankedLists.RankedListsFragment"
         android:label="RankedList"
         tools:layout="@layout/ranked_list_layout" />
+
+    <fragment
+        android:id="@+id/questions_fragment"
+        android:name="com.example.cybergarden.presenter.questions.QuestionsFragment"
+        android:label="questionsFragment"
+        tools:layout="@layout/questions_layout_fragment" />
 
     <fragment
         android:id="@+id/sign_in_fragment"
