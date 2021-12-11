@@ -1,11 +1,9 @@
 package com.example.cybergarden.presenter.newsFragment
 
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.view.*
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import coil.loadAny
 import com.example.cybergarden.data.News
 import com.example.cybergarden.databinding.NewsItemBinding
 import java.util.*
