@@ -1,3 +1,3 @@
 package com.example.cybergarden.data
 
-data class RanketItems(val fio: String, val score: String)
+data class RanketItems(var number: String, val fio: String, val score: String)

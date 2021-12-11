@@ -50,9 +50,9 @@ class RankedListsFragment : Fragment() {
     }
 
     private fun setObservers() {
-        viewModel.rankedListMLD.observe(this, {
+        viewModel.rankedListMLD.observe(this, { it ->
             data.clear()
-            data.addAll(it)
+            data.addAll(it.sortedByDescending { it.score })
             binding.recyclerView.adapter?.notifyDataSetChanged()
         })
     }
