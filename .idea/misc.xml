@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2537037037037037" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_coolicon.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/round_background.xml" value="0.14635416666666667" />
@@ -26,7 +27,7 @@
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/question_item.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/questions_layout_fragment.xml" value="0.176" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/ranked_list_item.xml" value="0.4" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/ranked_list_layout.xml" value="0.39965397923875434" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/ranked_list_layout.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/round_up_layout.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/sing_in_layout.xml" value="0.1" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/statistic_fragment_lauout.xml" value="0.12360688956433637" />

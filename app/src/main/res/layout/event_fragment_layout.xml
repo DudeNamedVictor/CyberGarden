@@ -13,10 +13,6 @@
         layout="@layout/enrollee_widget" />
 
     <include
-        android:id="@+id/career_guidance"
-        layout="@layout/enrollee_widget" />
-
-    <include
         android:id="@+id/ranked_lists"
         layout="@layout/enrollee_widget" />
 

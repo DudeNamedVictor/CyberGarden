@@ -26,7 +26,7 @@ class RankedListsFragment : Fragment() {
     ): View {
         binding = RankedListLayoutBinding.inflate(inflater, container, false)
         binding.toolbar.apply {
-            toolbarTitle.setText(R.string.events)
+            toolbarTitle.setText(R.string.ranked_lists)
             back.visibility = View.VISIBLE
             back.setOnClickListener {
                 findNavController().popBackStack()

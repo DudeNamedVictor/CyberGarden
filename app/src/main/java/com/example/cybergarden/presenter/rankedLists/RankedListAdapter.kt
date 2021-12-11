@@ -3,6 +3,8 @@ package com.example.cybergarden.presenter.rankedLists
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import com.example.cybergarden.R
 import com.example.cybergarden.data.RanketItems
 import com.example.cybergarden.databinding.RankedListItemBinding
 
@@ -14,8 +16,11 @@ class RankedListAdapter(private val rankedItems: List<RanketItems>) :
 
         fun onBind(news: List<RanketItems>, position: Int) {
             binding.apply {
-                title.text = news[position].fio
+                title.text = news[position].snils
                 description.text = news[position].score
+                if (news[position].score.toInt() > 120) {
+                    binding.result.load(R.drawable.ic_baseline_check_24)
+                }
             }
         }
 

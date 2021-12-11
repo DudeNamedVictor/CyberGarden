@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.example.cybergarden.data.RanketItems
-import com.example.cybergarden.presenter.utils.AuthorisationApi
 import com.example.cybergarden.presenter.utils.EventApi
 import retrofit2.Call
 import retrofit2.Callback

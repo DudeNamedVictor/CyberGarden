@@ -30,10 +30,6 @@ class EventFragment : Fragment() {
             title.setText(R.string.in_direction_of_training)
             description.setText(R.string.choose_your_direction)
         }
-        binding.careerGuidance.apply {
-            title.setText(R.string.career_guidance)
-            description.setText(R.string.career_guidance_test)
-        }
         binding.rankedLists.apply {
             title.setText(R.string.ranked_lists)
             description.setText(R.string.ranked_lists_description)

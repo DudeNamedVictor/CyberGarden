@@ -15,17 +15,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/purple_500"
+        android:background="@drawable/round_up"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/number"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="64dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:text="№"
+            android:text="@string/snils"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -33,25 +33,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="ФИО"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/number"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="70dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="7dp"
             android:text="Сумма баллов"
             android:textColor="@color/black"
@@ -60,18 +46,20 @@
             app:layout_constraintEnd_toStartOf="@+id/result"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/ic_coolicon"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="7dp"
             android:text="Согласие"
+            android:textColor="@color/black"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -80,5 +68,5 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/purple_500" />
+        android:background="@drawable/round_down" />
 </LinearLayout>
