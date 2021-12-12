@@ -18,6 +18,7 @@ class RankedListAdapter(private val rankedItems: List<RanketItems>) :
             binding.apply {
                 title.text = news[position].snils
                 description.text = news[position].score
+                number.text = (position + 1).toString()
                 if (news[position].score.toInt() > 200) {
                     binding.result.load(R.drawable.ic_baseline_check_24)
                 }
