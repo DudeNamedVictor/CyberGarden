@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -23,16 +24,27 @@ class AuthorisationFragment : Fragment() {
         binding = AuthorisationFragmentLayoutBinding.inflate(inflater, container, false)
 
         binding.actionButton.setOnClickListener {
-            viewModel.addUser(
-                Authorisation(
-                    binding.login.text.toString(),
-                    binding.fio.text.toString(),
-                    "",
-                    binding.mobilePhone.text.toString(),
-                    binding.snils.text.toString(),
-                    binding.password.text.toString()
+            if (binding.login.text.isNullOrEmpty() ||
+                binding.fio.text.isNullOrEmpty() ||
+                binding.mobilePhone.text.isNullOrEmpty() ||
+                binding.snils.text.isNullOrEmpty() ||
+                binding.password.text.isNullOrEmpty() ||
+                !binding.checkbox.isChecked
+            ) {
+                Toast.makeText(requireContext(), R.string.error_message, Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                viewModel.addUser(
+                    Authorisation(
+                        binding.login.text.toString(),
+                        binding.fio.text.toString(),
+                        "",
+                        binding.mobilePhone.text.toString(),
+                        binding.snils.text.toString(),
+                        binding.password.text.toString()
+                    )
                 )
-            )
+            }
         }
 
         viewModel.userRegistrationMLD.observe(this, {

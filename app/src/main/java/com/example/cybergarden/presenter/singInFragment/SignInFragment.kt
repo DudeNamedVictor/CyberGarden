@@ -24,16 +24,21 @@ class SignInFragment : Fragment() {
         binding = SingInLayoutBinding.inflate(inflater, container, false)
 
         binding.actionButton.setOnClickListener {
-            viewModel.authorization(
-                Authorisation(
-                    binding.login.text.toString(),
-                    "",
-                    "",
-                    "",
-                    "",
-                    binding.password.text.toString()
+            if (binding.login.text.isNullOrEmpty() || binding.password.text.isNullOrEmpty()) {
+                Toast.makeText(requireContext(), R.string.error_message, Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                viewModel.authorization(
+                    Authorisation(
+                        binding.login.text.toString(),
+                        "",
+                        "",
+                        "",
+                        "",
+                        binding.password.text.toString()
+                    )
                 )
-            )
+            }
         }
 
         viewModel.userRegistrationMLD.observe(this, {
