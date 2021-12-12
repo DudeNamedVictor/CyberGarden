@@ -20,4 +20,8 @@
         android:id="@+id/questions"
         layout="@layout/enrollee_widget" />
 
+    <include
+        android:id="@+id/email"
+        layout="@layout/enrollee_widget" />
+
 </LinearLayout>

@@ -48,6 +48,11 @@
             android:id="@+id/action_eventFragment_to_direction_of_training"
             app:destination="@id/direction_of_training"
             app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_eventFragment_to_email_fragment"
+            app:destination="@id/email_fragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -85,17 +90,17 @@
         android:label="authorisationFragment"
         tools:layout="@layout/authorisation_fragment_layout">
 
-    <action
-        android:id="@+id/authorisationFragment_to_mainFragment"
-        app:destination="@id/mainFragment"
-        app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/authorisationFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
         android:id="@+id/direction_of_training"
         android:name="com.example.cybergarden.presenter.directionOfTraining.DirectionOfTrainingFragment"
         android:label="directionFragment"
-        tools:layout="@layout/direction_of_training_layout" >
+        tools:layout="@layout/direction_of_training_layout">
 
         <action
             android:id="@+id/direction_of_training_to_dialog_fragment"
@@ -108,5 +113,11 @@
         android:name="com.example.cybergarden.presenter.dialog_fragment.DialogFragment"
         android:label="dialogFragment"
         tools:layout="@layout/dialog_layout" />
+
+    <fragment
+        android:id="@+id/email_fragment"
+        android:name="com.example.cybergarden.presenter.emailFragment.EmailFragment"
+        android:label="emailFragment"
+        tools:layout="@layout/email_layout" />
 
 </navigation>

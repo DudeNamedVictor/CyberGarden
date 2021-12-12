@@ -38,6 +38,10 @@ class EventFragment : Fragment() {
             title.setText(R.string.questions)
             description.setText(R.string.questions_description)
         }
+        binding.email.apply {
+            title.setText(R.string.email)
+            description.setText(R.string.email_description)
+        }
     }
 
     private fun setOnClickListeners() {
@@ -49,6 +53,9 @@ class EventFragment : Fragment() {
         }
         binding.inDirectionOfTraining.root.setOnClickListener {
             findNavController().navigate(R.id.direction_of_training)
+        }
+        binding.email.root.setOnClickListener {
+            findNavController().navigate(R.id.email_fragment)
         }
     }
 

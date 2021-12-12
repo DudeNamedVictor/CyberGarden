@@ -14,6 +14,8 @@
     <string name="ranked_lists_description">Следите за соей позицией</string>
     <string name="questions">Часто задаваемые вопросы</string>
     <string name="questions_description">Найдите ответ на свой вопрос здесь</string>
+    <string name="email">Обратная связь</string>
+    <string name="email_description">Свяжитесь с нами</string>
     <string name="enter">Вход</string>
     <string name="registration">Регистрация</string>
     <string name="user_name">Имя пользователя</string>
@@ -38,8 +40,14 @@
     <string name="choose_form">Выберете форму обучения?</string>
     <string name="budget">Бакалавриат</string>
     <string name="commercial">Специалитет</string>
+    <string name="search">Поиск по мероприятиям</string>
     <string name="summ">Сумма баллов?</string>
     <string name="summa">Сумма</string>
     <string name="filter">Фильтр</string>
     <string name="percent">Вероятность поступления</string>
+    <string name="your_email">Укажите email для обратной связи</string>
+    <string name="your_message">Ваше обращение</string>
+    <string name="send">Отправить</string>
+    <string name="success_message">Сообщение успешно отправлено</string>
+    <string name="error_message">Заполните поля</string>
 </resources>

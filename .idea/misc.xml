@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/edittext_border.xml" value="0.24814814814814815" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/drawable/ic_coolicon.xml" value="0.14635416666666667" />
@@ -18,11 +19,12 @@
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/dialog_layout.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/direction_item_layout.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/direction_of_training_layout.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/email_layout.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/enrollee_widget.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/event_fragment_layout.xml" value="0.1082427536231884" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/main_activity_layout.xml" value="0.1" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/main_fragment_layout.xml" value="0.152" />
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_fragment_layout.xml" value="0.2" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_fragment_layout.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/news_item.xml" value="0.1" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/question_item.xml" value="0.264" />
         <entry key="..\:/Users/Victor/AndroidStudioProjects/CyberGarden/app/src/main/res/layout/questions_layout_fragment.xml" value="0.176" />
