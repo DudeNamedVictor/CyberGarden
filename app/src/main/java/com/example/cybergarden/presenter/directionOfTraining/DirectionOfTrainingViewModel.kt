@@ -13,7 +13,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class DirectionOfTrainingViewModel(application: Application) : AndroidViewModel(application) {
-    var newsSizeMLD = MutableLiveData<List<Direction>>()
+    var newsSizeMLD = MutableLiveData<List<DoubleItem>>()
 
     fun getDirection() {
         val api = DirectionApi.RETROFIT_SERVICE.getRankedList()
@@ -23,7 +23,9 @@ class DirectionOfTrainingViewModel(application: Application) : AndroidViewModel(
                 call: Call<List<Direction>>,
                 response: Response<List<Direction>>
             ) {
-                newsSizeMLD.value = response.body()
+                var list = mutableListOf<DoubleItem>()
+                response.body()?.map { list.add(DoubleItem(it, "")) }
+                newsSizeMLD.value = list
             }
 
             override fun onFailure(call: Call<List<Direction>>, t: Throwable) {}
@@ -38,7 +40,7 @@ class DirectionOfTrainingViewModel(application: Application) : AndroidViewModel(
                 call: Call<List<DoubleItem>>,
                 response: Response<List<DoubleItem>>
             ) {
-                newsSizeMLD.value = response.body()?.map { it.programDto }
+                newsSizeMLD.value = response.body()
             }
 
             override fun onFailure(call: Call<List<DoubleItem>>, t: Throwable) {}

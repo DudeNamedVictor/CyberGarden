@@ -26,6 +26,7 @@
     <string name="log_in_no_account">Еще не аккаунта? Зарегиструйтесь</string>
     <string name="authorisation_alert">Я ознакомлен и согласен с правилами обработки персональных данных</string>
     <string name="error_login">Пользователь не существует</string>
+    <string name="error_list">Не удалось загрузить список</string>
     <string name="choose_direction">Подобрать направление</string>
     <string name="choose_intresting">Что вам интересно?</string>
     <string name="math">Математика</string>
@@ -40,4 +41,5 @@
     <string name="summ">Сумма баллов?</string>
     <string name="summa">Сумма</string>
     <string name="filter">Фильтр</string>
+    <string name="percent">Вероятность поступления</string>
 </resources>

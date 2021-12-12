@@ -18,7 +18,7 @@ class RankedListAdapter(private val rankedItems: List<RanketItems>) :
             binding.apply {
                 title.text = news[position].snils
                 description.text = news[position].score
-                if (news[position].score.toInt() > 120) {
+                if (news[position].score.toInt() > 200) {
                     binding.result.load(R.drawable.ic_baseline_check_24)
                 }
             }

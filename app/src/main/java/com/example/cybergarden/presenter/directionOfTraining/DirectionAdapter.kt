@@ -1,21 +1,26 @@
 package com.example.cybergarden.presenter.directionOfTraining
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cybergarden.data.Direction
+import com.example.cybergarden.data.DoubleItem
 import com.example.cybergarden.databinding.DirectionItemLayoutBinding
 
-class DirectionAdapter(private val news: List<Direction>) :
+class DirectionAdapter(private val news: List<DoubleItem>) :
     RecyclerView.Adapter<DirectionAdapter.MyViewHolder>() {
 
     class MyViewHolder(private val binding: DirectionItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun onBind(news: List<Direction>, position: Int) {
+        fun onBind(news: List<DoubleItem>, position: Int) {
             binding.apply {
-                title.text = news[position].name
-                code.text = news[position].code
+                title.text = news[position].programDto.name
+                code.text = news[position].programDto.code
+                if (news[position].percent != "") {
+                    percent.visibility = View.VISIBLE
+                    percent.text = "Вероятность поступления: " + news[position].percent
+                }
             }
         }
 
