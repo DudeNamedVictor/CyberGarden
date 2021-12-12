@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_gravity="center"
         android:layout_marginTop="128dp"
         android:text="@string/enter"
         android:textSize="36sp" />
@@ -20,6 +20,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/edittext_border"
+        android:gravity="center"
         android:hint="@string/user_name" />
 
     <EditText
@@ -30,6 +31,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/edittext_border"
+        android:gravity="center"
         android:hint="@string/password" />
 
     <androidx.appcompat.widget.AppCompatButton
